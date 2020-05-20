@@ -1,0 +1,57 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.5
+-- https://www.phpmyadmin.net/
+--
+-- Хост: localhost:3306
+-- Время создания: Май 19 2020 г., 16:55
+-- Версия сервера: 5.7.24
+-- Версия PHP: 7.4.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- База данных: `register-bg`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) DEFAULT NULL,
+  `login` varchar(500) NOT NULL,
+  `pass` varchar(500) NOT NULL,
+  `name` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `users`
+--
+
+INSERT INTO `users` (`id`, `login`, `pass`, `name`) VALUES
+(NULL, 'craftermr14@gmail.com', 'f2aab6fded653367d8d477acf9fb3a70', 'Илья Борисов'),
+(NULL, 'craftermr14@gmail.com', 'f128e4d6f4fb822ab32a1ad874db1625', 'Илья Борисов'),
+(NULL, 'Admin', '123456789', 'admin'),
+(NULL, 'admin@gmail.com', '09dc3500922f5746b9591442232ada93', '231206052123'),
+(NULL, 'admin@gmail.com', 'f128e4d6f4fb822ab32a1ad874db1625', 'admin'),
+(NULL, 'admin@gmail.com', 'f128e4d6f4fb822ab32a1ad874db1625', 'admin'),
+(NULL, 'craftermr14@gmail.com', '74a055c1077a992e4afcfa423196d907', '223333333333333333223333333333333333223333333333333333223333333333333333223333333333333333223333333333333333223333333333333333223333333333333333223333333333333333223333333333333333223333333333333333223333333333333333223333333333333333223333333333333333223333333333333333223333333333333333223333333333333333223333333333333333223333333333333333223333333333333333223333333333333333223333333333333333'),
+(NULL, 'craftermr14@gmail.com', 'b79ac58938ff608b236e132494253523', 'sdfgdfgsdgsdf'),
+(NULL, 'afasfdasf', 'e180db5c2cf14b1f3f0570c4c7d73554', 'dasdfasfasdf'),
+(NULL, 'admin@gmail.com', 'f128e4d6f4fb822ab32a1ad874db1625', 'admin');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
